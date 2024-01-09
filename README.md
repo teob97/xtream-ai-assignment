@@ -203,4 +203,17 @@ Let's get cracking! 🍐💼🔍
 ---
 
 ## How to run
-Please fill this section as part of the assignment.
+
+First step, cloning the repository:
+
+``` bash
+git clone https://github.com/teob97/xtream-ai-assignment
+```
+
+then you have build the environment using ```conda```:
+
+``` bash
+conda env create -f environment.yml
+conda activate xtream_assignment
+pip install -U ppscore
+```

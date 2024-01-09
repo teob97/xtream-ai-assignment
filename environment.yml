@@ -6,4 +6,7 @@ dependencies:
   - pandas
   - matplotlib
   - seaborn
+  - python[version='<3.11']
+  - ydata-profiling
+  - ipywidgets
 prefix: C:\Users\teoba\miniconda3\envs\xtream_assignment
