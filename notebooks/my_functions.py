@@ -6,6 +6,7 @@ from sklearn.preprocessing import OrdinalEncoder
 def data_preprocessing(df_raw:pd.DataFrame):
     df = df_raw.copy()
 
+    # Remove "city_" prefix 
     df['city'] = df['city'].str.split('_').str[1].astype('float')
 
     df['major_discipline'] = ['No Major' 
@@ -49,6 +50,7 @@ def data_preprocessing(df_raw:pd.DataFrame):
         unknown_value = np.nan,
     ).fit_transform(df[['last_new_job']])    
 
+    # Switch to boolean variables
     df['relevent_experience'] = df['relevent_experience'] == 'Has relevent experience'
 
     df['target_label'] = df['target'].map({0:'Not looking for job change', 1:'Looking for a job change'})
