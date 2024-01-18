@@ -27,7 +27,7 @@ def data_preprocessing(df_raw:pd.DataFrame):
     df['gender'] = df['gender'].fillna('Not given')
     
     df['education_level'] = OrdinalEncoder(
-        categories = [['No Major' 'Primary School', 'High School', 'Graduate', 'Masters', 'Phd']],
+        categories = [['Primary School', 'High School', 'Graduate', 'Masters', 'Phd']],
         handle_unknown = 'use_encoded_value',
         unknown_value = np.nan,
     ).fit_transform(df[['education_level']])
