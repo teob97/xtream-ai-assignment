@@ -71,7 +71,7 @@ def proportion_z_test(data:pd.DataFrame, category:str, label:str, target:str):
     p = sum(left_the_job)/len(left_the_job)
     p0 = sum(left_the_job_tot)/len(left_the_job_tot)
         
-    return (p-p0)/math.sqrt(p*(1-p)/len(left_the_job))
+    return (p-p0)/math.sqrt(p0*(1-p0)/len(left_the_job))
 
 def print_percentage_and_ztest(data:pd.DataFrame, category:str, labels = None):
     results = {}
