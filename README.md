@@ -208,6 +208,7 @@ First step, cloning the repository:
 
 ``` bash
 git clone https://github.com/teob97/xtream-ai-assignment
+cd xtream-ai-assignment
 ```
 
 then you have build the environment using ```conda```:
@@ -215,5 +216,10 @@ then you have build the environment using ```conda```:
 ``` bash
 conda env create -f environment.yml
 conda activate xtream_assignment
-pip install -U ppscore
+```
+
+once the environment is activated you have to launch jupyter lab:
+
+``` bash
+jupyter lab
 ```
