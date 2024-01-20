@@ -7,6 +7,6 @@ dependencies:
   - matplotlib
   - seaborn
   - python[version='<3.11']
-  - ydata-profiling
+  - scikit-learn
   - ipywidgets
 prefix: C:\Users\teoba\miniconda3\envs\xtream_assignment
